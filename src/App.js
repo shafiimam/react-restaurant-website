@@ -9,9 +9,9 @@ function App() {
   return (
     <Container>
       <Header/>
-      {/* <HeroSection/>
-      <Footer/> */}
-      <Card/>
+      <HeroSection/>
+      <Footer/>
+      {/* <Card/> */}
     </Container>
   );
 }
