@@ -11,12 +11,12 @@ export const Container = styled.div`
   right: ${(props) => props.right};
 `;
 export const WrapperDiv = styled.div`
- background-color: ${(props) => props.backgroundColor};
- width: ${(props) => props.width || "1150px"};
- height: ${(props) => props.height};
- padding: ${(props) => props.padding};
- margin: 0 auto;
- border-top: ${(props) => props.borderTop};
+  background-color: ${(props) => props.backgroundColor};
+  width: ${(props) => props.width || "1150px"};
+  height: ${(props) => props.height};
+  padding: ${(props) => props.padding};
+  margin: ${props => props.margin || "0 auto"};
+  border-top: ${(props) => props.borderTop};
 `;
 export const ButtonContainer = styled.div`
   height: auto;
@@ -31,25 +31,28 @@ export const StyledButton = styled.button`
   left: ${(props) => props.left};
   right: ${(props) => props.right};
   height: ${(props) => props.height || "40px"};
-  margin: 0 auto;
+  float: ${(props) => props.float};
   width: ${(props) => props.width || "99px"};
-  margin: ${(props) => props.margin || "0 30px"};
+  margin: ${(props) => props.margin || "0 10px"};
+  padding: ${(props) => props.padding};
   color: ${(props) => props.color || "white"};
-  border-radius: ${props => props.borderRadius || "2px"};
-  font-size: ${props => props.fontSize || "15px"};
-  line-height: ${props => props.lineHeight || "22px"}
-  font-family: ${props => props.fontFamily || "Poppins"};
+  border-radius: ${(props) => props.borderRadius};
+  font-size: ${(props) => props.fontSize || "15px"};
+  line-height: ${(props) => props.lineHeight || "22px"};
+  font-family: ${(props) => props.fontFamily || "Poppins"};
   font-weight: ${(props) => props.fontWeight || "500"};
-  border: none;
+  border: ${(props) => props.border || "none"};
+  cursor: pointer;
+  border-bottom: ${(props) => props.borderBottom};
   background-color: ${(props) => props.backgroundColor || "white"};
 `;
 
 export const StyledInput = styled.input`
-    display: inline;
+  display: inline;
   height: ${(props) => props.height || "52px"};
   width: ${(props) => props.width || "331px"};
   margin-top: 5px;
-  margin: ${props => props.margin || "0 auto"};
+  margin: ${(props) => props.margin || "0 auto"};
   padding: 15px;
   color: "black";
   border: 1px solid rgba(0, 0, 0, 0.2);

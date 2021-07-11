@@ -27,7 +27,7 @@ const heroData = [
 ];
 
 const Hero = () => {
-  return <WrapperDiv backgroundColor="#260F3B">
+  return <WrapperDiv>
       <Row>
         {heroData.map(hero => (<Col lg={4} key={Math.random()}><HeroCard icon={hero.icon} title={hero.title} summary={hero.summary}/></Col>))}
       </Row>

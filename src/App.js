@@ -1,18 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Components/Header/Header";
-import HeroSection from "./Components/Hero/HeroSection"
+import HeroSection from "./Components/Hero/HeroSection";
 import Footer from "./Components/Footer/Footer";
-import Card from "./Components/Card/Card"
-import {Container } from './Components/Styles/Container.styles'
+import Authentication from "./Components/Authentication/Authentication"
+import { Container, WrapperDiv } from "./Components/Styles/Container.styles";
 function App() {
   return (
-    <Container>
-      <Header/>
-      <HeroSection/>
-      <Footer/>
-      {/* <Card/> */}
-    </Container>
+    <>
+      <Header />
+      <WrapperDiv backgroundColor="#260F3B" margin="10px 0" width="100vw">
+        <HeroSection />
+      </WrapperDiv>
+      <Footer />
+      <Authentication/>
+    </>
   );
 }
 
