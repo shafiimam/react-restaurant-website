@@ -89,7 +89,4 @@ export const StyledItem = styled.div`
   background-repeat: no-repeat;
   cursor: pointer;
   border-radius: 5px;
-  .active{
-     border: 2px solid red;
-   }
 `;
