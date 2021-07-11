@@ -13,6 +13,7 @@ export const P = styled.p`
   font-family: ${(props) => props.fontFamily || "Poppins"};
   font-size: ${(props) => props.fontSize || "15px"};
   margin: ${(props) => props.margin};
+  padding: ${(props) => props.padding};
   font-weight: ${(props) => props.fontWeight || "300"};
   line-height: ${(props) => props.lineHeight || "20px"};
   color: ${(props) => props.color || "black"};
@@ -29,6 +30,7 @@ export const Span = styled.span`
   font-weight: ${(props) => props.fontWeight || "500"};
   line-height: ${(props) => props.lineHeight || "22px"};
   margin: ${(props) => props.margin};
+  padding: ${(props) => props.padding};
   font-weight: ${(props) => props.fontWeight || "300"};
   text-align: ${(props) => props.textAlign || "center"};
 `;

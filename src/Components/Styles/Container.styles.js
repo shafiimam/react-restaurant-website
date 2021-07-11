@@ -49,22 +49,47 @@ export const StyledButton = styled.button`
 
 export const StyledInput = styled.input`
   display: inline;
-  height: ${(props) => props.height || "52px"};
+  height: ${(props) => props.height || "53px"};
   width: ${(props) => props.width || "331px"};
   margin-top: 5px;
   margin: ${(props) => props.margin || "0 auto"};
-  padding: 15px;
+  padding: 13px;
   color: "black";
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: ${(props) => props.borderRadius};
 `;
 
-export const StyledImage = styled.image`
-  height: ${(props) => props.height};
-  width: ${(props) => props.width};
-  position: absolute;
+export const StyledImage = styled.img`
+  height: ${(props) => props.height ||"auto"};
+  width: ${(props) => props.width || "auto"};
+  padding: ${(props) => props.padding};
+  margin: ${(props) => props.margin};
+  position: relative;
   top: ${(props) => props.top};
   bottom: ${(props) => props.bottom};
   left: ${(props) => props.left};
   right: ${(props) => props.right};
+`;
+
+export const StyledNav = styled.nav`
+  margin: ${(props) => props.margin};
+  display: flex;
+  justify-content: space-between;
+  padding: ${(props) => props.padding || "10px"};
+  /* border-bottom: 1px solid black; */
+  box-shadow: 1px 1px 6px rgba(139, 139, 139, 0.2);
+`;
+
+export const StyledItem = styled.div`
+  height: 190px;
+  /* width: 220px; */
+  background-image: url(${props=> props.background});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 5px;
+  .active{
+     border: 2px solid red;
+   }
 `;

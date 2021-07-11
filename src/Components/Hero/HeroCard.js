@@ -6,7 +6,7 @@ const HeroCard = ({ icon, title, summary }) => {
   return (
     <WrapperDiv
       width="320px"
-      height="265px"
+      height="270px"
       padding="30px"
       style={{
         display: "flex",

@@ -3,12 +3,14 @@ import TextField from "@material-ui/core/TextField";
 import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import { StyledButton, WrapperDiv } from "../Styles/Container.styles";
+import { StyledButton, StyledImage, WrapperDiv } from "../Styles/Container.styles";
 import { Span, P } from "../Styles/elements.style";
 import "./Dialog.css";
+import xMark from '../../Images/x-mark 1.png'
 import referralIcon from "../../Images/referral.png";
 import {
   createStyles,
+  Drawer,
   Grid,
   Link,
   makeStyles,
@@ -45,45 +47,43 @@ const CustomTextField = withStyles({
     },
   },
 })(TextField);
-export default function FormDialog({ dialog, toggle }) {
-  const [open, setOpen] = React.useState(dialog);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-  const [signUp, setSignUp] = useState(false);
+export default function FormDialog({ dialog, toggle, isSignUp }) {
+//   const [open, setOpen] = useState(dialog);
+//   const handleClickOpen = () => {
+//     setOpen(true);
+//   };
+  const [signUp, setSignUp] = useState(isSignUp);
   const newSignUp = () => {
     setSignUp(true);
   };
-  const handleClose = () => {
-    setOpen(false);
-  };
+//   const handleClose = () => {
+//     setOpen(false);
+//   };
   const handleSignIn = () => {
     console.log("signed in success");
   };
   return (
     <div>
-      <Dialog
+      <Drawer
+        anchor="right"
         open={dialog}
         onClose={toggle}
         aria-labelledby="form-dialog-title"
       >
         <DialogTitle id="form-dialog-title">
-          <Span>Log In</Span>
+          <Span>{!signUp && !isSignUp? 'Log in': 'Sign Up'}</Span>
           <StyledButton
             float="right"
-            border="1px solid black"
             height="36px"
             width="24px"
             color="black"
-            borderRadius="50%"
             onClick={toggle}
           >
-            x
+          <StyledImage src={xMark}/>
           </StyledButton>
         </DialogTitle>
         <DialogContent dividers="true">
-          {!signUp ? (
+          {!signUp && !isSignUp?(
             <FormControl>
               <CustomTextField
                 margin="normal"
@@ -161,7 +161,7 @@ export default function FormDialog({ dialog, toggle }) {
                 <WrapperDiv width="100%" margin="20px 0 0 0">
                   <Grid container spacing={2}>
                     <Grid item lg={2}>
-                      <img src={referralIcon} alt="refreralcode" />
+                      <StyledImage top="8px" src={referralIcon} alt="refreralcode" />
                     </Grid>
                     <Grid item lg={10}>
                       <Span
@@ -219,7 +219,7 @@ export default function FormDialog({ dialog, toggle }) {
             </FormControl>
           )}
         </DialogContent>
-      </Dialog>
+      </Drawer>
     </div>
   );
 }

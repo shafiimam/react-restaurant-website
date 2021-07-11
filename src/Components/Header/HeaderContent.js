@@ -23,7 +23,7 @@ const HeaderContent = () => {
         </H2>
         <P> Order food from favorite restaurant near you.</P>
       </Container>
-      <Container top="93px" right="15px">
+      <Container top="93px" right="14px">
         <StyledInput placeholder="Enter a Location" />
         <StyledButton
           width="131px"
@@ -31,6 +31,7 @@ const HeaderContent = () => {
           backgroundColor="#FBA922"
           margin="0"
           right="5px"
+          bottom="1px"
         >
           Find Code
         </StyledButton>
@@ -43,7 +44,7 @@ const HeaderContent = () => {
           right="270px"
           fontWeight="400"
         >
-          <Image style={{position: "relative",bottom:"-3px"}} src={accurate} /> Locate Me
+          <StyledImage style={{position: "relative",bottom:"-3px"}} src={accurate} /> Locate Me
         </StyledButton>
       </Container>
       <Container top="115px">
@@ -61,8 +62,8 @@ const HeaderContent = () => {
         <Span margin="15px" fontWeight="500" color="#707070">Sylhet</Span>
         <Span margin="15px" fontWeight="500">Khulna</Span>
         <Span margin="15px" fontWeight="500" color="#707070">Chattogram</Span>
-        <Span margin="15px" fontWeight="500" color="#707070">Bogura</Span>
-        <Span margin="15px" color="#707070">Comilla</Span>
+        <Span margin="15px" fontWeight="500">Bogura</Span>
+        <Span margin="15px"fontWeight="500" color="#707070">Comilla</Span>
       </Container>
     </>
   );
