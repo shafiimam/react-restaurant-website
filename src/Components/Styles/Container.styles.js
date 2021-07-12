@@ -26,15 +26,15 @@ export const ButtonContainer = styled.div`
 
 export const StyledButton = styled.button`
   position: relative;
+  height: ${props=> props.height};
+  width: ${props=> props.width};
   top: ${(props) => props.top};
   bottom: ${(props) => props.bottom};
   left: ${(props) => props.left};
   right: ${(props) => props.right};
-  height: ${(props) => props.height || "40px"};
   float: ${(props) => props.float};
-  width: ${(props) => props.width || "99px"};
-  margin: ${(props) => props.margin || "0 10px"};
-  padding: ${(props) => props.padding};
+  margin: ${(props) => props.margin};
+  padding: ${(props) => props.padding || "10px 15px"};
   color: ${(props) => props.color || "white"};
   border-radius: ${(props) => props.borderRadius};
   font-size: ${(props) => props.fontSize || "15px"};
@@ -74,15 +74,15 @@ export const StyledImage = styled.img`
 export const StyledNav = styled.nav`
   margin: ${(props) => props.margin};
   display: flex;
+  width: ${(props) => props.width || "1080px"};
   justify-content: space-between;
   padding: ${(props) => props.padding || "10px"};
-  /* border-bottom: 1px solid black; */
-  box-shadow: 1px 1px 6px rgba(139, 139, 139, 0.2);
+
 `;
 
 export const StyledItem = styled.div`
   height: 190px;
-  /* width: 220px; */
+  width: 220px;
   background-image: url(${props=> props.background});
   background-size: cover;
   background-position: center;

@@ -1,0 +1,11 @@
+.mainMenu {
+  width: 100vw;
+  height:60px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 6px rgba(139, 139, 139, 0.2);
+}
+.nav-items{
+    width: 429px;
+}

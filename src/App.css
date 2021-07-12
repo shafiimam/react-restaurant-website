@@ -39,7 +39,16 @@
   display: grid;
   grid-template-columns: repeat(4,1fr);
 }
-
 .activeMenu{
-  border: 3px solid black;
+  border: 5px solid #FBA922;
+}
+
+.border-bottom{
+  padding-bottom:40px;
+  border-bottom: 1px solid black;
+}
+
+.grid-1{
+  display:grid;
+  grid-template-columns: 1fr;
 }

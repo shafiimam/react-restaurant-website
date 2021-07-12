@@ -1,0 +1,25 @@
+.menu-content {
+    padding: 2px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.item {
+  justify-self: center;
+  background: #ffffff;
+  box-shadow: 1px 1px 15px rgba(190, 190, 190, 0.25);
+  border-radius: 5px;
+  margin-bottom: 40px !important;
+}
+.rating {
+  height: 16px;
+  width: 34px;
+  background-color: #48c479;
+  border-radius: 1px;
+  padding: 0px 2px 2px 2px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

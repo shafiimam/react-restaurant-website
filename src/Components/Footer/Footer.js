@@ -110,7 +110,7 @@ const Footer = () => {
       </WrapperDiv>
       <WrapperDiv padding="40px" borderTop="1px solid black" className="d-flex justify-content-between">
           
-            <Span width="440px">
+            <Span width="470px">
               Copyright © 2021 Barnaslunsj Pvt. Ltd. All rights reserved.
             </Span>
             <Span>

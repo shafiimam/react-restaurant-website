@@ -31,8 +31,8 @@ export const Span = styled.span`
   line-height: ${(props) => props.lineHeight || "22px"};
   margin: ${(props) => props.margin};
   padding: ${(props) => props.padding};
-  font-weight: ${(props) => props.fontWeight || "300"};
   text-align: ${(props) => props.textAlign || "center"};
+  background: ${(props) => props.background};
 `;
 export const A = styled.a`
   display: ${props => props.display || "block"};
