@@ -1,5 +1,6 @@
 const items = [
     {
+        _id:"1",
         item: "Bread",
         image: "Images/bread.png",
         menu:[
@@ -7,18 +8,21 @@ const items = [
         ]
     },
     {
+        _id:"2",
         item: "Salad",
         image: "Images/salad.png",
         menu:[
             {name: "", type: "", day: "", image: ""},  {name: "", type: "", day: "", image: ""},  {name: "", type: "", day: "", image: ""},  {name: "", type: "", day: "", image: ""},  {name: "", type: "", day: "", image: ""},
         ]
     },{
+        _id:"3",
         item: "Varied",
         image: "Images/varied.png",
         menu:[
             {name: "", type: "", day: "", image: ""},  {name: "", type: "", day: "", image: ""},  {name: "", type: "", day: "", image: ""},  {name: "", type: "", day: "", image: ""},  {name: "", type: "", day: "", image: ""},
         ]
     },{
+        _id:"4",
         item: "Vegetarian",
         image: "Images/veg.png",
         menu:[

@@ -7,7 +7,8 @@ import question from '../../Images/question-inquiry 1.png';
 import cart from '../../Images/shopping-cart 1.png';
 const Nav = () => {
     return (
-        <Container>
+        <div className="mainMenu">
+            <Container>
             <StyledNav>
                 <StyledImage height="24px" width="175px" margin="18px 0 0 0" src={logo} w/>
                 <WrapperDiv margin="0px 0px 0px 20%">
@@ -17,7 +18,9 @@ const Nav = () => {
                     <StyledButton backgroundColor="#FBA922" borderRadius="2px">Sign Up</StyledButton>
                 </WrapperDiv>
             </StyledNav>
-        </Container>
+            </Container>
+        </div>
+        
     );
 };
 
